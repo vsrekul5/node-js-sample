@@ -1,7 +1,6 @@
 FROM node:latest 
-RUN cd /var/www/
+RUN tar -xf Node.tar.gz
 COPY . /var/www/ 
-RUN tar -xf *.tar.gz
 WORKDIR /var/www/
 EXPOSE 5000
 ENTRYPOINT ["npn", "start"]
