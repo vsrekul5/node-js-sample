@@ -3,4 +3,4 @@ COPY . /var/www/
 WORKDIR /var/www/
 RUN npn install
 EXPOSE 5000
-ENTRYPOINT ["npn", "start"]
+ENTRYPOINT ["npm", "start"]
