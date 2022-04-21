@@ -1,5 +1,5 @@
 FROM node:latest 
-RUN tar -zxvf Node.tar.gz
+RUN tar -xvpf Node.tar.gz
 COPY . /var/www/
 WORKDIR /var/www/
 EXPOSE 5000
